@@ -18,7 +18,7 @@
   />
 </p>
 
-# COLORSENSE 2.0 - ONLINE
+# COLORSENSE VERSÃO ONLINE - 2.0
 Tecnologia Portátil para Identificação de Cores em Roupas para Pessoas com Deficiência Visual Com Suporte Online
 
 
