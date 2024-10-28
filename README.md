@@ -47,15 +47,16 @@ No que diz respeito ao preço, embora o ESP32 e o TCS34725 possam ter um custo i
 Essas melhorias no design e na funcionalidade do sensor não apenas otimizam seu desempenho, mas também ampliam suas aplicações em projetos de automação, monitoramento ambiental e sistemas IoT, tornando-o uma escolha mais viável e eficiente para desenvolvedores e entusiastas.
 
 Equipe:
+- Luiz Henrique Gualberto Scotta
+- Rafaela Mesquita Moraes de Almeida
 - José Roberto Vasconcellos Lopes
 - Thiago Sousa Vasconcellos Lopes
 - Luiz Felipe Barata Queiroz
-- Luiz Henrique Gualberto Scotta
-- Rafaela Mesquita Moraes de Almeida
+
 
 <a href="#" title="View PDF now"> 📕Clique aqui para ler o artigo em sua versão original e publicada na disciplina</a>
 <br>
-<a href="#" title="View PDF now"> 📕Clique aqui para acessar o repositório da versão original e publicada na disciplina</a>
+<a href="#" title="View PDF now"> Clique aqui para acessar o repositório da versão original e publicada na disciplina</a>
 
 ## 💻 Tecnologias utilizadas no projeto
 
@@ -69,8 +70,8 @@ Código：
 
 |   Arquivo   | descrição                                                                                                                                                                                                                                                                         |
 | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|  Q0704_LeitorDeCor_TCS3200.ino  | Este código em C++ usa o sensor de cor TCS230 e o módulo de som DFPlayer Mini para ler a cor detectada e tocar um arquivo de áudio correspondente. Bibliotecas e Objetos: Inclui as bibliotecas para o sensor de cor, para a contagem de frequência e para o controle de um MP3 player. Pinos e Componentes: Define os pinos para os componentes (sensor de cor, LED e botão). Configuração Inicial: No setup(), inicializa o sensor de cor, configura o botão, o LED e chama a função configuraMP3() para ajustar o módulo MP3, incluindo o volume. Loop Principal: Ao detectar o pressionamento do botão, o LED acende e o sensor de cor lê a cor. Após a leitura, exibe os valores RGB e o nome da cor correspondente. Toca o arquivo de áudio associado, onde cada cor tem um número que corresponde a um arquivo de som numerado na pasta MP3 do DFPlayer Mini. O LED é desligado após a execução do áudio. Este código permite identificar cores e tocar um som específico para cada uma, criando uma interação áudio-visual.                                                                                                                                                                                                    |
-| ColorMatch.h | Este código define uma estrutura para reconhecer cores e associá-las a valores específicos, permitindo identificar a cor mais próxima de uma leitura RGB. Definições e Dados de Calibração: BLACK_CAL, WHITE_CAL, READ_VAL, e LEARN_VAL definem estados de operação; sdBlack e sdWhite são valores de calibração para preto e branco, usados para ajustar o sensor. Tabela de Cores: colorTable é uma estrutura que associa um nome a valores RGB de cada cor, e a tabela ct[] contém seis cores pré-definidas (BRANCO, VERMELHO, VERDE, AZUL, LARANJA e PRETO), cada uma com seus valores RGB e um arquivo de áudio MP3 correspondente. Função colorMatch(): Essa função recebe um valor RGB lido e calcula a distância entre ele e cada cor na tabela ct[], usando a soma dos quadrados das diferenças para medir similaridade. Retorna o índice da cor mais próxima (ou igual, se a distância for zero). Este código é projetado para identificar a cor mais próxima entre as opções da tabela e pode ser integrado a um sistema que reproduz sons específicos para cada cor reconhecida. |
+|  Q0704_LeitorDeCor_TCS3200.ino  | Este código permite identificar cores e tocar um som específico para cada uma, criando uma interação áudio-visual.                                                                                                                                                                                                    |
+| ColorMatch.h | Este código define uma estrutura para reconhecer cores e associá-las a valores específicos, permitindo identificar a cor mais próxima de uma leitura RGB.  |
 
 ## ✨ Características
 
@@ -79,21 +80,21 @@ Código：
 - Botão liga/desliga;
 - Botão Push para leitura de cores;
 - Medidas: 20cm x 6,5cm x 5cm (L x P x A);
-- 2 Baterias de lítio recarregáveis (4.2v cada);
+- 1 Bateria de lítio recarregáveis (9v);
 - Placa para balanceamento de carga;
 - Fonte para carregamento 7 a 12v.
 
 ## 📚 Materiais
 
-- Arduino UNO;
-- Sensor de cor TCS3200;
+- ESP32;
+- Sensor de cor;
 - Módulo de áudio DFPlayer Mini;
-- Cartão SD 8GB;
-- Duas baterias de Li-Po (Lítio-Polímero) 3.7V;
+- Cartão SD 32GB;
+- Bateria de Li-Po (Lítio-Polímero) 9V;
 - Placa BMS 3S 12V 100A;
 - Botão para ligar e desligar o dispositivo;
 - Botão push para acionar a leitura do sensor de cor;
-- Jump’s de ligação;
+- Jumper's de ligação;
 - Alto-falante
 - parafusos
 
